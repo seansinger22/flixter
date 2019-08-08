@@ -71,3 +71,11 @@ gem 'bootstrap', '~> 4.3.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+# Added simple form for all form needs
+gem 'simple_form'
+
+# Adding devise for user authentication
+gem 'devise'
+
+
