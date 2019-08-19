@@ -1,5 +1,4 @@
 Rails.application.configure do
-  # Adding line for devise mailers
   # config.action_mailer.delivery_method = :smtp
 
   # config.action_mailer.smtp_settings = {
@@ -9,7 +8,7 @@ Rails.application.configure do
   #   authentication: "plain",
   #   enable_starttls_auto: true,
   #   user_name: ENV['GMAIL_ADDRESS'],
-  #   passwor: ENV['GMAIL_PASSWORD']
+  #   password: ENV['GMAIL_PASSWORD']
   # }
 
   config.action_mailer.delivery_method = :test
@@ -48,7 +47,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
 
