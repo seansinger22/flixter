@@ -78,15 +78,18 @@ gem 'simple_form'
 # Adding devise for user authentication
 gem 'devise'
 
-# Adding carrierwaver to upload images
-gem 'carrierwave', '~> 2.0'
-
 # Adding figaro to hide our sensitive information
-gem "figaro"
+gem 'figaro'
 
 # Adding for carrierwave to communicate with Amazon S3
-gem "fog-aws"
+gem 'fog-aws'
+
+# Adding carrierwaver to upload images
+gem 'carrierwave'
 
 # Adding minimagick to adjust the image sizes
-gem "mini_magick"
+gem 'mini_magick'
+
+# Adding carrierwave-aws to upload large videos
+gem 'carrierwave-aws'
 
