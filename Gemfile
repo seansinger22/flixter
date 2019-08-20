@@ -36,6 +36,39 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Added Bootstrap and supporting gems
+gem 'popper_js', '< 2', '>= 1.14.3'
+gem 'bootstrap', '~> 4.3.1'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
+# Added jquery to support Bootstrap
+gem 'jquery-rails'
+
+# Added simple form for all form needs
+gem 'simple_form'
+
+# Adding devise for user authentication
+gem 'devise'
+
+# Adding carrierwaver to upload images
+gem 'carrierwave', '~> 1.0'
+
+# Adding figaro to hide our sensitive information
+gem 'figaro'
+
+# Adding for carrierwave to communicate with Amazon S3
+gem 'fog-aws'
+
+# Adding minimagick to adjust the image sizes
+gem 'mini_magick'
+
+# Adding carrierwave-aws to upload large videos
+gem 'carrierwave-aws'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -60,36 +93,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Added jquery to support Bootstrap
-gem 'jquery-rails'
-
-# Added Bootstrap and supporting gems
-gem 'popper_js', '~> 1.14.5'
-gem 'bootstrap', '~> 4.3.1'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.3.3'
-end
-
-# Added simple form for all form needs
-gem 'simple_form'
-
-# Adding devise for user authentication
-gem 'devise'
-
-# Adding figaro to hide our sensitive information
-gem 'figaro'
-
-# Adding for carrierwave to communicate with Amazon S3
-gem 'fog-aws'
-
-# Adding carrierwaver to upload images
-gem 'carrierwave'
-
-# Adding minimagick to adjust the image sizes
-gem 'mini_magick'
-
-# Adding carrierwave-aws to upload large videos
-gem 'carrierwave-aws'
-
