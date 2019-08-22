@@ -68,6 +68,9 @@ gem 'mini_magick'
 # Adding carrierwave-aws to upload large videos
 gem 'carrierwave-aws'
 
+# Adding stripe to allow for payments
+gem 'stripe'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
