@@ -1,7 +1,9 @@
 class Lesson < ApplicationRecord
+  belongs_to :section
   mount_uploader :video, VideoUploader
 
-  belongs_to :section
+  include RankedModel
+  ranks :row_order, :with_same => :section_id
 
   validates :title, presence: true
   validates :subtitle, presence: true
