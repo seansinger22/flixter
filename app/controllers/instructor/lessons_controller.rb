@@ -1,19 +1,11 @@
 class Instructor::LessonsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_section, only: [:new, :create]
+  before_action :require_authorized_for_current_section, only: [:create]
   before_action :require_authorized_for_current_lesson, only: [:update]
-
-  def new
-    @lesson = Lesson.new
-  end
 
   def create
     @lesson = current_section.lessons.create(lesson_params)
-    if @lesson.valid?
-      redirect_to instructor_course_path(current_section.course)
-    else
-      render :new, status: :unprocessable_entity
-    end
+    redirect_to instructor_course_path(current_section.course)
   end
 
   def update
