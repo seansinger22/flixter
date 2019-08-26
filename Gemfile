@@ -74,6 +74,8 @@ gem 'stripe'
 # Adding ranked-model to be able to drag and drop and sort lessons
 gem 'ranked-model'
 
+# Adding jquery-ui-rails to use that libraries sortable feature for lessons
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
