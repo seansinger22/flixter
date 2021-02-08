@@ -54,7 +54,7 @@ gem 'simple_form'
 gem 'devise'
 
 # Adding carrierwaver to upload images
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Adding figaro to hide our sensitive information
 gem 'figaro'
